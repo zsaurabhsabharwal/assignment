@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package communications;
+
+message RestarauntInfo {
+    string name = 1;
+    string rating = 2;
+    string cuisines = 3;
+    string address = 4;
+    string time = 5;
+    string cft= 6;
+    string ID = 7;
+}
+
+message ListRestaraunt {
+    repeated RestarauntInfo list = 1;
+}
+
+message RestarauntID {
+    string ID = 1;
+}
+
+message Response {
+    string status = 1;
+}
+
+service addedit {
+    rpc AddRestaraunt (RestarauntInfo) returns (RestarauntID) {}
+    rpc EditRestaraunt (RestarauntInfo) returns (RestarauntID) {}
+    rpc GetRestaraunt (Response) returns (ListRestaraunt) {}
+    rpc DeleteRestaraunt (RestarauntID) returns (Response) {}
+}

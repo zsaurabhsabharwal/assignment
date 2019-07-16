@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head lang='en'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Add/Edit Restraunt</title>
+</head>
+<style>
+    @font-face { font-family: Okra; src: url('Okra-Regular.ttf'); } 
+    @font-face {font-family: OkraSemiBold; src: url('Okra-SemiBold'); }
+
+    body {
+        text-align: center;
+    }
+
+    input[type=text] {
+        font-family: Okra;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+    }
+
+    #container {
+        /* background-color: red;
+        text-align: center; */
+    }
+
+    header h1 {
+        font-family: Okra;
+        text-align: center;
+        height: 100px;
+    }
+
+    form {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+
+
+    header h3 {
+        font-weight: 550;
+        font-family: Okra;
+        text-align: left;
+    }
+
+    #submit {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    #add {
+        height: 30px;
+        color: white;
+        background: rgb(40, 167, 69);
+        width: 50%;
+        text-align: center;
+        /* align-items: center; */
+        border-radius: 4px;
+        margin-top: 30px;
+        /* margin: auto; */
+    }
+</style>
+
+<body>
+    <header>
+        <h1>
+            Add/Edit Restaraunt
+        </h1>
+    </header>
+    <main>
+        <div id="container">
+            <form>
+                <div class="input1">
+                    <header>
+                        <h3>
+                            Name
+                        </h3>
+                    </header>
+                    <input type="text" name="Name" placeholder="Restaraunt Name">
+                </div>
+                <div class="input1">
+                    <header>
+                        <h3>
+                            Rating
+                        </h3>
+                    </header>
+                    <input type="text" name="Rating" placeholder="Restaraunt Rating">
+                </div>
+                <div class="input1">
+                    <header>
+                        <h3>
+                            Cuisines
+                        </h3>
+                    </header>
+                    <input type="text" name="Cuisines" placeholder="Cuisines served by the restaraunt">
+                </div>
+                <div class="input1">
+                    <header>
+                        <h3>
+                            Address
+                        </h3>
+                    </header>
+                    <input type="text" name="Address" placeholder="Full address of the restaraunt">
+                </div>
+                <div class="input1">
+                    <header>
+                        <h3>
+                            Timings
+                        </h3>
+                    </header>
+                    <input type="text" name="Timings" placeholder="Restaraunt timings">
+                </div>
+                <div class="input1">
+                    <header>
+                        <h3>
+                            CFT
+                        </h3>
+                    </header>
+                    <input type="text" name="CFT" placeholder="Cost for two at the restaraunt(approx)">
+                </div>
+            </form>
+            <div id="submit">
+                <button id="add">
+                    Done
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head lang='en'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>View Restaraunts</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<style>
+    @font-face { font-family: Okra; src: url('Okra-Regular.ttf'); } 
+    @font-face {font-family: OkraSemiBold; src: url('Okra-SemiBold'); }
+
+    #contain {
+        width: 40%;
+        margin: auto;
+        /* background-color: red; */
+    }
+
+    #navigator {
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+    }
+
+    #titl {
+        position: absolute;
+        left: 31%;
+        top: 0px;
+    }
+
+    #ico {
+        position: absolute;
+        right: 45%;
+        top: 15px;
+    }
+
+    .restarauntinfo {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        /* padding: 10px; */
+        margin-left: 10px;
+    }
+
+    .restarauntname {
+        text-align: left;
+        color: rgb(56, 53, 53);
+    }
+
+    .cuisines {
+        color: rgba(126, 97, 96, 0.596);
+    }
+
+    .address {
+        color: lightgray;
+    }
+
+    .cft {
+        color: rgba(126, 97, 96, 0.596); 
+    }
+
+    .opensat {
+        float: left;
+    }
+
+    .open {
+        color: brown;
+        font-family: Okra;
+    }
+
+    .rating {
+        float: left;
+    }
+
+    .ratingbox {
+        position: absolute;
+        right: 47%;
+        height: 17px;
+        background-color: green;
+        color: white;
+        border-radius: 4%;
+    }
+
+    .card {
+        height: 100px;
+    }
+
+    .extendedcards {
+        padding: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        padding: 10px;
+        width: 100px;
+        border-radius: 4%;
+    }
+
+    .card {
+        border-bottom: black;
+        height: 110px;
+        display: flex;
+        align-items: center;
+    }
+
+    .edit {
+        padding: 10px;
+        color: rgb(156, 4, 4);
+    }
+</style>
+
+<body>
+    <div id = "contain">
+        <div id = "navigator">
+            <p id = "titl" style = "font-family:Okra;">
+                Restaraunt Listings
+            </p>
+            <i class="material-icons" id="ico">add</i>
+        </div>
+        <br>
+        <div id = "cards">
+            <div class = "extendedcards">
+                <div class = "card">
+                    <div class = "restrauntimage">
+                        <img src = "https://b.zmtcdn.com/images/logo/zomato_flat_bg_logo.svg">
+                    </div>
+                    <div class = "restarauntinfo">
+                        <div class = "top-info">
+                            <div class = "opensat">
+                                <small class = "open">
+                                    Opens at 6am
+                                </small>
+                            </div>
+                            <div class = "rating">
+                                <div class = "ratingbox">
+                                    <small style = "font-family:Okra;">
+                                        0.0
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "restarauntname">
+                            <small style = "font-family:Okra;">
+                                Restaraunt name
+                            </small>
+                        </div>
+                        <div class = "cuisines">
+                            <small style = "font-family:Okra;">
+                                Cafe - Fast food, Burger...
+                            </small>
+                        </div>
+                        <div class = "address">
+                            <small style = "font-family:Okra;">
+                                New Town District, Gurgaon
+                            </small>
+                        </div>
+                        <div class = "cft" >
+                            <small style = "font-family:Okra;">
+                                230 for two
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class = "edit">
+                    <small style = "font-family:Okra;">
+                        Delete
+                    </small>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src = "./main.js"></script>
+</body>
+</html>
